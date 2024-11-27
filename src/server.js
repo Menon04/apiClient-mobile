@@ -27,6 +27,14 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
+app.get('/', (req, res) => {
+  res.json({
+    status: 'success',
+    message: 'API is running',
+    version: '1.0.0'
+  });
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/user', authenticateToken, userRoutes);
 app.use('/api/wallet', walletRoutes);
