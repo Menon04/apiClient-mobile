@@ -12,7 +12,7 @@ const tickerRoutes = require('./routes/tickerRoutes');
 const dividendRoutes = require('./routes/dividendRoutes');
 const profitabilityRoutes = require('./routes/profitabilityRoutes');
 
-dotenv.config({ path: "../.env" });
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;

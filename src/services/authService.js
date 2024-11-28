@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const authRepository = require('../auth/authRepository');
 const axios = require('axios');
 
-dotenv.config({ path: "../.env" });
+dotenv.config();
 
 const SECRET_KEY = process.env.SECRET_KEY;
 
